@@ -1,0 +1,48 @@
+#circle-twelve {
+    display: block;
+    background-color: #ff69b4;
+    -webkit-transition: width 1s, height 2s, background-color 1s, -moz-transform 1s;
+    -ms-transition: width 1s, height 2s, background-color 1s, -o-transform 1s;
+    transition: width 1s, height 1s, background-color 1s, transform 1s;
+    position: relative;
+    overflow: hidden;
+}
+
+#circle-twelve:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#circle-twelve-top-image {
+    cursor: pointer;
+}
+
+#animated-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#animated-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transition: opacity 1s ease-in-out;
+}
+
+#animated-image img.bottom {
+    z-index: 0;
+}
+
+#animated-image img.top {
+    z-index: 1;
+}
+
+#animated-image img.top.transparent {
+    opacity: 0;
+}
